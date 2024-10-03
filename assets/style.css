@@ -71,7 +71,10 @@ section {
     grid-area: c;
 }
 
-.box img {}
+.box img {
+    overflow: hidden;
+    object-fit: cover;
+}
 
 .box p {
 
@@ -81,6 +84,7 @@ section {
     font-size: 40px;
     font-style: normal;
 }
+
 
 .box a {
 
