@@ -20,7 +20,8 @@ let plus= document.querySelector('#plus')
 
 let display = document.querySelector('#result')
 
-
+let nothing = '';
+let digitos = display.innerHTML.length
 function apagar(){
     console.log('1')
 
@@ -31,7 +32,16 @@ function apagar(){
     
     
 }
+
+
+
+
+
+
 function aperto(input){
+   
+
+    
     console.log('2')
     display.innerHTML += input
     
@@ -42,12 +52,20 @@ function eraser(){
 
     
 }
+
+
 function contar(){
     console.log('4')
-    console.log(display.innerHTML)
+    
+    let noob = display.innerHTML
+    let pro = noob.trim()
+    let hacker = pro.length
 
+    
+if(hacker > 0){
     bob = eval(display.innerHTML);
     display.innerHTML = bob
+}
 
 }
 
@@ -65,7 +83,7 @@ equal.addEventListener('click', ()=>{
 })
 divide.addEventListener('click', ()=>{
     aperto('/')
-})
+}) 
 
 
 
@@ -117,6 +135,14 @@ plus.addEventListener('click', ()=>{
     aperto('+')
 })
 
+
+
+
+// let noob = '          '
+// let pro = noob.trim()
+// let hacker = pro.length
+// console.log(pro)
+// console.log(hacker)
 
 
 // #result{

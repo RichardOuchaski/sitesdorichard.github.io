@@ -379,6 +379,9 @@ article{
     height: 350px;
 
 }
+.imgg img{
+ object-fit: fill;
+}
 
 .grid {
     grid-template-columns: auto auto auto;
